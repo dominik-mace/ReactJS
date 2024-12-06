@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  background: rgb(1,183,236);
+  background: linear-gradient(180deg, rgba(1,183,236,1) 0%, rgba(0,125,255,1) 100%);
+}
+
+.App {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 100vh ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  background-color: #282c34;
+  padding: 1rem;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #4b77b4;
+}
+
+p{
+  font-size: 20px;
+}
+
+form, .form-container {
+  background-color: white;
+  padding: 2rem 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+input, textarea{
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem 0 0.8rem 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  font-family: Arial;
+}
+
+button {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+.checkmark{
+ width: 200px;
+}
+
+.link {
+  color: #e6eaeb;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.admin-dashboard {
+  background: rgb(1,183,236);
+  background: linear-gradient(180deg, rgba(1,183,236,1) 0%, rgba(0,125,255,1) 100%);
+  min-height: 100vh;
+  padding: 6rem;
+}
+
+.dashboard-title {
+  text-align: left;
+  color: #1673c7;
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.applications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.application-card {
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1.5rem;
+  display:grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 2rem;
+}
+
+.application-details {
+  margin: 0.5rem 0;
+  display:grid;
+  grid-template-columns: 2fr 3fr 4fr;
+}
+
+.detail-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #1673c7;
+}
+
+.divider {
+  border: 0.5px solid #ddd;
+  margin: 1rem 0;
+}
+
+.rating-section {
+  display: flex;
+  gap: 4rem;
+  align-items:center;
+}
+
+.rating-title {
+  font-size: 16px;
+  color: #1673c7;
+}
+
+.stars-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.star {
+  font-size: 80px;
+  cursor: pointer;
+}
+
+.star.gold {
+  color: gold;
+}
+
+.star.gray {
+  color: #ccc;
+}
+
+/* Paginacija */
+.pagination-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.pagination-button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.pagination-button:hover {
+  color: #1673c7;
+}
+
+.pagination-button.active {
+  color: #1673c7;
+  font-weight: bold;
+  pointer-events: none;
+}
